@@ -1,0 +1,6 @@
+<section *ngIf="product" class="product-card">
+    <img class="product-card__image" [src]="product.image" [alt]="product.title" title="{{ product.title }}">
+    <p>{{ product.description }}</p>
+    <p>{{ product.category }}</p>
+    <p>Price: {{ product.price }}</p>
+</section>

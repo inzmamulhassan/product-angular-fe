@@ -1,0 +1,10 @@
+<section>
+    <input type="text" placeholder="product search">
+    <button>Search</button>
+</section>
+<section>
+    <app-product-card 
+    *ngFor="let product of productList"
+    [product]="product"
+    ></app-product-card>
+</section>
